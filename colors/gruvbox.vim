@@ -37,6 +37,12 @@ endif
 
 let s:gb = {}
 
+" Pure and simple.
+let s:gb.snow = ['ffffff', 15]
+let s:gb.coal = ['000000', 16]
+" The star of the show comes straight from Made of Code.
+let s:gb.tardis = ['0a9dff', 39]
+
 if &background == "dark"
 	let s:gb.dark0  = ['282828', 235]
 	let s:gb.dark1  = ['3c3836', 237]
@@ -234,13 +240,17 @@ call s:HL('FoldColumn', 'medium', 'dark1')
 " Cursor: {{{
 
 " Character under cursor
-call s:HL('Cursor',  'none', 'none', 'inverse')
+" call s:HL('Cursor',  'none', 'none', 'inverse')
 " Visual mode cursor, selection
-call s:HL('vCursor', 'none', 'none', 'inverse')
+" call s:HL('vCursor', 'none', 'none', 'inverse')
 " Input moder cursor
-call s:HL('iCursor', 'none', 'none', 'inverse')
+" call s:HL('iCursor', 'none', 'none', 'inverse')
 " Language mapping cursor
-call s:HL('lCursor', 'none', 'none', 'inverse')
+" call s:HL('lCursor', 'none', 'none', 'inverse')
+
+call s:HL('Cursor',  'coal', 'tardis', 'bold')
+call s:HL('vCursor', 'coal', 'tardis', 'bold')
+call s:HL('iCursor', 'coal', 'tardis', 'none')
 
 " }}}
 " Syntax Highlighting: {{{
