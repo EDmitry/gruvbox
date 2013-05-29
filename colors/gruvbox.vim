@@ -41,7 +41,7 @@ let s:gb = {}
 let s:gb.snow = ['ffffff', 15]
 let s:gb.coal = ['000000', 16]
 " The star of the show comes straight from Made of Code.
-let s:gb.tardis = ['0a9dff', 39]
+let s:gb.tardis = ['00E5EE', 39]
 
 if &background == "dark"
 	let s:gb.dark0  = ['282828', 235]
